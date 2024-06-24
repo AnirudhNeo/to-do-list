@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #023047;
+}
+:root {
+  --primary-color: #219ebc;
+  --secondary-color: #8ecae6;
+  --white-color: #ffffff;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+  color: var(--primary-color);
+}
+.mb-3 {
+  margin: 2rem 0;
+}
+.input-box {
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  border-bottom: 0.1rem solid var(--primary-color);
+  color: var(--secondary-color);
+}
+.todo-btn {
+  border: 0;
+  outline: 0;
+  border: 0.1rem solid var(--primary-color);
+  cursor: pointer;
+  color: var(--white-color);
+  background: transparent;
+  padding: 0.5rem 2rem;
+  border-radius: 1.2rem;
+}
+.input-box::placeholder {
+  color: var(--secondary-color);
+}
+.todo-btn:hover {
+  border: 0.1rem solid var(--primary-color);
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.5rem 2rem;
+  border-radius: 1.2rem;
+}
+.todo-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 550px;
+}
+ul li {
+  margin: 1rem 1.2rem;
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.5rem;
+}
+li.checked {
+  color: var(--white-color) !important;
+  text-decoration: line-through;
+}
+ul li span {
+  margin: 0 0 0 2rem;
+  cursor: pointer;
+  background: var(--primary-color);
+}
